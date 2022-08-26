@@ -5,7 +5,10 @@
 */
 
 //Code here
-
+let me = {
+  name:"Spencer",
+  age:22
+}
 
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
@@ -16,21 +19,26 @@
 //and goodBoy/goodGirl (a boolean).
 
 //Code here
-
+let dog = {
+  name: "Duke",
+  color: "brown",
+  age: 10,
+  goodBoy: true
+}
 
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
 
 //Code here
-
+console.log(dog.name);
 
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
-
+console.log(dog["color"]);
 
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
@@ -40,13 +48,23 @@
 */
 
 //Code here
-
+let favoriteThings = {
+  band: "Amalee",
+  food: "pretzels",
+  person: "my wife",
+  book: "SAO",
+  movie: "Wreck-it Ralph",
+  holiday: "Christmas"
+}
 
 /*
-  After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
+  After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and 
+  then another key named 'show' with the value being your favorite show.
 */
 
 //Code here
+favoriteThings.car = "Impala";
+favoriteThings.show = "Rising of the Shield Hero";
 
 
 /*
@@ -55,6 +73,8 @@
 */
 
 //Code here
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
@@ -73,8 +93,7 @@ var carDetails = {
 */
 
 //Code Here
-
-
+let {color, make, model, year} = carDetails;
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
