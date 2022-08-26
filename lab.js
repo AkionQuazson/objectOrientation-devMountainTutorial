@@ -105,7 +105,7 @@ let {color, make, model, year} = carDetails;
 
 function greeting( obj ) {
   //Code Here
-  
+  const {firstName, lastName, title} = obj;
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -124,7 +124,10 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+let totalPopulation = (obj) => {
+  const {utah, california, texas, arizona} = obj;
+  return utah + california + texas + arizona;
+}
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
@@ -138,7 +141,10 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+const ingredients = (food) => {
+  const {carb, fat, protein} = food;
+  return [carb, fat, protein];
+}
 
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
@@ -160,7 +166,8 @@ var user = {
 */
 
 //Code Here
-
+user.name = "Bryan G. Smith";
+user.email = "bryan.smith@devmounta.in";
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
@@ -168,7 +175,7 @@ var user = {
 */
 
 //Code Here
-
+delete user.age;
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
@@ -178,8 +185,14 @@ var user = {
 */
 
 //Code here
-
-
+class Cat {
+	constructor(name, age, color) {
+		this.name = name;
+		this.age = age;
+		this.color = color;
+	}
+}
+let myKitty = new Cat("Fox", 4, "orange");
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
