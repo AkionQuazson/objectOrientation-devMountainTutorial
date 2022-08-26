@@ -203,6 +203,18 @@ let myKitty = new Cat("Fox", 4, "orange");
 */
 
 //Code here
+class Wizard {
+	constructor(name, age, favoriteSpell) {
+		this.name = name;
+		this.age = age;
+		this.favoriteSpell = favoriteSpell;
+		this.castSpell = () => {
+			console.log(`${this.name} has cast ${this.favoriteSpell}`)
+		}
+	}
+}
+let magitechWizard = new Wizard('Unit 7415 "TAIL"', 17, 'Minute Meteors');
+magitechWizard.castSpell();
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
@@ -228,6 +240,23 @@ let myKitty = new Cat("Fox", 4, "orange");
 */
 
 //Code Here
+class Phone {
+	constructor(brand, model, storage, color, price){
+		this.brand = brand;
+		this.model = model;
+		this.storage = storage;
+		this.color = color;
+		this.price = price;
+		this.sold = false;
+		this.sell = () => {
+			this.sold = true;
+			console.log(`${this.brand} ${this.model} has been sold`)
+		}
+		this.changePrice = (newPrice) => {
+			this.price = newPrice;
+		}
+	}
+}
 
   
 /*
@@ -241,6 +270,9 @@ let myKitty = new Cat("Fox", 4, "orange");
 */
 
 //Code Here
+let phone1 = new Phone("Argus", "Visualizer", 300, "black", 150);
+let phone2 = new Phone("Rekt Progress", "Amusphere", 148, "white", 173);
+let phone3 = new Phone("Rath", "STL", 13, "gray", 2300);
 
 /* 
   Call the changePrice function on one of your phones, 
@@ -250,7 +282,8 @@ let myKitty = new Cat("Fox", 4, "orange");
 */ 
 
 //Code Here 
-
+phone2.newPrice(159);
+console.log(phone2);
 
 /*
   Now call the sell method on one of your other phone objects
@@ -259,7 +292,7 @@ let myKitty = new Cat("Fox", 4, "orange");
 */
 
 //Code Here 
-
+phone1.sold();
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
